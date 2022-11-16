@@ -6,7 +6,8 @@ namespace TemaGo\OtusTest;
 
 class NumberParser
 {
-    function parse($text) {
-        return preg_replace('/[^0-9]/', '', $text);
+    function parse(string $text): string
+    {
+        return (string) preg_replace('/[^0-9]/', '', $text);
     }
 }
